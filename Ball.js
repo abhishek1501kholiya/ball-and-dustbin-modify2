@@ -9,7 +9,7 @@ class Ball{
        
         this.body = Bodies.circle(x,y,r,options);
         this.r = r;
-        this.image = loadImage("paper.png");
+        this.image = loadImage("sprites/paper.png");
         World.add(world,this.body);
         //this.x = x;
         //this.y = y;
@@ -19,15 +19,15 @@ class Ball{
     show(){
         const pos = this.body.position;
         const angle = this.body.angle;
-        // image(img,this.x,this.y);
+        
         push()
         translate(pos.x,pos.y);
         rotate(angle);
-        imageMode(CENTER);
-        image(this.image, pos.x, pos.y, this.r, this.r);
-        fill(255);
-        ellipseMode(CENTER);
-        ellipse(0,0,this.r,this.r);
+      imageMode(CENTER);
+        image(this.image, 10,10,35,35);
+      // fill("orange");
+       //ellipseMode(CENTER);
+     // ellipse(0,0,this.r,this.r);
         pop();
     }
     

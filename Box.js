@@ -10,7 +10,7 @@ class Box {
         this.body = Bodies.rectangle(x,y,width,height,options);
        this.width = width;
       this.height = height;
-      this.image = loadImage("dustbingreen.png");
+      this.image = loadImage("sprites/dustbingreen.png");
         World.add(world,this.body);
        // this.x = x;
        // this.y = y;
@@ -25,13 +25,13 @@ class Box {
     translate(pos.x, pos.y);
     rotate(angle);
     imageMode(CENTER);
-    image(this.image,0,0,this.width,this.height,)
-    rectMode(CENTER);
-    strokeWeight(4);
-    stroke("green");
+    image(this.image,-0,-15,50, 50);
+  // rectMode(CENTER);
+  //  strokeWeight(4);
+    //stroke("green");
   
-    fill(255);
-    rect(0, 0, this.width, this.height);
+  //fill(255);
+   //rect(0, 0, this.width, this.height);
     pop();
     }
 }

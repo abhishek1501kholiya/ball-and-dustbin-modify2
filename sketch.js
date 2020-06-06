@@ -43,9 +43,9 @@ function draw()
 
 
 	ground1.display();
-	rect1.show();
+	//rect1.show();
 	rect2.show();
-	rect3.show();
+	//rect3.show();
 	circle1.show();
 	
 }

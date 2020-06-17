@@ -28,7 +28,7 @@ rect1 = new Box(330,360,10,50);
 rect2 = new Box(360,385,50,10);
 rect3 = new Box(390,360,10,50);
 
-circle1 = new Ball(100,300,20);
+circle1 = new Ball(100,300,15);
 
 
 ground1 = new Ground(200,400,400,10);
@@ -51,7 +51,7 @@ function draw()
 }
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(circle1.body,circle1.body.position,{x:39,y:-39})
+		Matter.Body.applyForce(circle1.body,circle1.body.position,{x:22,y:-22})
 	}
 }
 
